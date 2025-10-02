@@ -14,4 +14,12 @@ class File extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    // Mudança para possibilitar atribuição em massa para ImportaLote
+     protected $fillable = [
+        'name',
+        'user_id',
+        'path',
+        'original_name',
+    ];
 }
