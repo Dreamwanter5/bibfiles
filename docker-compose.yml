@@ -45,8 +45,6 @@ services:
       - "3141:3141"
     environment:
           - APP_URL=http://auth.local:3141
-          - OAUTH_CONSUMER_KEY=faker
-          - OAUTH_CONSUMER_SECRET=faker
     networks:
       bibfiles-network:
         aliases:
